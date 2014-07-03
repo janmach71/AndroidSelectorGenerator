@@ -4,8 +4,7 @@ This Android Studio plugin automatically generates drawable selectors from appro
 
 ## How to install it:
 
- - in Android Studio: go to `Preferences→Plugins→Browse repositories` and search for `SelectorGenerator`
- _or_
+ - in Android Studio: go to `Preferences→Plugins→Browse repositories` and search for `SelectorGenerator` _or_
  - [download it](http://plugins.jetbrains.com/plugin/7298) and install via `Preferences→Plugins→Install plugin from disk`
 
 ## How to use it:
@@ -14,7 +13,7 @@ Create images following naming conventions for different states of image and the
 
 | File name infix 	|File name short | Drawable state 		    |
 | ------------------| ---------------| ---------------------    |
-| _normal 		   	| _n_ / _n.      | (default state)          |
+| _normal 		   	| \_n_ / _n.      | (default state)          |
 | _pressed         	| _p_ / _p.      | state_pressed			|
 | _focused         	| _f_ / _f.      | state_focused			|
 | _disabled        	| _d_ / _d.      | state_enabled (false)    |
@@ -27,12 +26,12 @@ Create images following naming conventions for different states of image and the
 
 So for example for button "some_button" there can be created selector from images for normal, pressed, checked and disabled combinations:
 
-ic_some_button_n.png
-ic_some_button_p.png
-ic_some_button_d.png
-ic_some_button_c.png
-ic_some_button_c_d.png
-ic_some_button_c_p.png
+| ic_some_button_n.png |
+| ic_some_button_p.png |
+| ic_some_button_d.png |
+| ic_some_button_c.png |
+| ic_some_button_c_d.png |
+| ic_some_button_c_p.png |
 
 1) Right-click folder with your resources e.g 'drawable-xhdpi'
 
