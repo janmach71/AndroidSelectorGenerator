@@ -1,0 +1,4 @@
+out
+.DS_STORE
+*.zip
+/out/

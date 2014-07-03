@@ -1,0 +1,50 @@
+<idea-plugin version="2" url="https://github.com/janmach71/AndroidSelectorGenerator">
+    <id>com.brainchutes.android.plugin.selectorgenerator</id>
+    <name>Selector Generator for Android</name>
+    <version>1.0.0</version>
+    <vendor email="android@brainchutes.com" url="http://www.brainchutes.com">Brainchutes</vendor>
+
+    <description><![CDATA[
+      This plugin automatically generates drawable selectors from appropriately named Android resources (*_n.*, *_normal.*, *_p.*, *_pressed.*, *_p_c.*, *._pressed_checked.png, ...).
+      ]]></description>
+
+    <change-notes><![CDATA[
+<html>
+  <b>1.0.0</b> (22/06/2014)
+  <ul>
+    <li>Initial branch from android-selector-chapek with refactoring to using RegExps to support single letter identifiers.
+  </ul>
+</html>
+]]>
+    </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="107.105"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+      <action id="android-selector-generator-regexp" class="SelectorGeneratorAction" text="Generate Android Selectors RegExp"
+              description="Automatically generates drawable selectors from appropriately named resources (_n.*, _normal.*, _p.*, _pressed.*, ...)">
+          <add-to-group group-id="ProjectViewPopupMenu" anchor="after"
+                        relative-to-action="ProjectViewPopupMenuRefactoringGroup"/>
+      </action>
+  </actions>
+
+</idea-plugin>
