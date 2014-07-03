@@ -14,16 +14,16 @@ Create images following naming conventions for different states of image and the
 
 | File name infix 	|File name short | Drawable state 		    |
 | ------------------| ---------------| ---------------------    |
-| _normal 		   	| _n_ | _n.      | (default state)          |
-| _pressed         	| _p_ | _p.      | state_pressed			|
-| _focused         	| _f_ | _f.      | state_focused			|
-| _disabled        	| _d_ | _d.      | state_enabled (false)    |
-| _checked		   	| _c_ | _c.      | state_checked   		    |
-| _selected		   	| _s_ | _s.      | state_selected  		    |
-| _hovered         	| _h_ | _h.      | state_hovered   	   	    |
-| _checkable	   	| _k_ | _k.      | state_checkable 		    |
-| _activated	   	| _a_ | _a.      | state_activated 		    |
-| _windowfocused   	| _w_ | _w.      | state_window_focused 	|
+| _normal 		   	| _n_ / _n.      | (default state)          |
+| _pressed         	| _p_ / _p.      | state_pressed			|
+| _focused         	| _f_ / _f.      | state_focused			|
+| _disabled        	| _d_ / _d.      | state_enabled (false)    |
+| _checked		   	| _c_ / _c.      | state_checked   		    |
+| _selected		   	| _s_ / _s.      | state_selected  		    |
+| _hovered         	| _h_ / _h.      | state_hovered   	   	    |
+| _checkable	   	| _k_ / _k.      | state_checkable 		    |
+| _activated	   	| _a_ / _a.      | state_activated 		    |
+| _windowfocused   	| _w_ / _w.      | state_window_focused 	|
 
 So for example for button "some_button" there can be created selector from images for normal, pressed, checked and disabled combinations:
 
